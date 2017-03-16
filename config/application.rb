@@ -22,10 +22,14 @@ module Agency
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 
+# Check paths in rails console with "Rails.application.config.assets.paths"
+
     config.assets.paths << Rails.root.join("vendor", "assets", "startbootstrap", "img")
     config.assets.paths << Rails.root.join("vendor", "assets", "startbootstrap", "scss")
     config.assets.paths << Rails.root.join("vendor", "assets", "startbootstrap", "js")
     config.assets.paths << Rails.root.join("vendor", "assets", "startbootstrap", "lib", "tether")
+    config.assets.paths << Rails.root.join("vendor", "assets", "startbootstrap", "lib", "font-awesome", "scss")
+    config.assets.paths << Rails.root.join("vendor", "assets", "startbootstrap", "lib", "font-awesome", "fonts")
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
   end
 end
