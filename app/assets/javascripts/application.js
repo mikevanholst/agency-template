@@ -18,5 +18,6 @@
 //= require agency.js
 //= require contact_me.js
 //= require jqBootstrapValidation.js
+//= require gulpfile.js
 
 //= require_tree .
